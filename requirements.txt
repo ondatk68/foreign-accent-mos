@@ -1,0 +1,11 @@
+torch==2.8.0
+torchaudio==2.8.0
+transformers==4.56.2
+huggingface_hub==0.34.4
+numpy==1.26.4
+scipy==1.15.3
+librosa==0.11.0
+soundfile==0.13.1
+pyworld==0.3.5
+tqdm==4.67.1
+matplotlib==3.10.6

@@ -14,8 +14,26 @@ To reproduce the listening-test stimuli:
 
 1. Obtain the ERJ corpus from the official distribution site:
 [ERJ corpus](https://www.nii.ac.jp/dsc/idr/speech/submit/UME-ERJ.html)
-2. Generate the analysis-resynthesized speech using the provided scripts.
-The code for generating the stimuli will be released here.
+2. Place the corpus at `ERJ/` in this repository, so the paths in
+   `original.scp` (for example `ERJ/wav/AE/F02/S_PH_B_1_182.wav`) exist.
+3. Install the dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Clone the source repositories:
+
+   ```bash
+   git clone https://github.com/sarulab-speech/Sidon external/Sidon
+   git clone https://github.com/NVIDIA/BigVGAN external/BigVGAN
+   ```
+5. Generate the stimuli:
+   ```bash
+   bash prep_stimuli.sh
+   ```
+
 
 ## Evaluation Results
-The listening-test results will be released here.
+Listening-test responses are provided in `results/I{1,2,3,4}_{EN,JP}.json`.
+
